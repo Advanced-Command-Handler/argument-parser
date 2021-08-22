@@ -12,7 +12,7 @@
 		"discord.js"
 	],
 	"license": "GNU",
-	"main": "index.js",
+	"main": "dist",
 	"prettier": {
 		"arrowParens": "avoid",
 		"bracketSpacing": false,
@@ -28,5 +28,6 @@
 		"prepublishOnly": "npm run prettier && npm run build",
 		"prettier": "prettier --write *.ts *.json README.md"
 	},
+	"types": "dist",
 	"version": "0.1.0"
 }
