@@ -2,6 +2,7 @@
 	"author": "Ayfri",
 	"description": "The argument parser used in the Advanced-Command-Handler.",
 	"devDependencies": {
+		"prettier": "^2.3.2",
 		"typescript": "^4.3.5"
 	},
 	"keywords": [
@@ -12,10 +13,20 @@
 	],
 	"license": "GNU",
 	"main": "index.js",
+	"prettier": {
+		"arrowParens": "avoid",
+		"bracketSpacing": false,
+		"printWidth": 160,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"trailingComma": "es5",
+		"useTabs": true
+	},
 	"name": "argument-parser",
 	"scripts": {
 		"build": "tsc",
-		"prepublishOnly": "npm run build"
+		"prepublishOnly": "npm run prettier && npm run build",
+		"prettier": "prettier --write *.ts *.json README.md"
 	},
 	"version": "0.1.0"
 }
