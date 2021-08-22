@@ -1,0 +1,16 @@
+{
+	"author": "Ayfri",
+	"description": "The argument parser used in the Advanced-Command-Handler.",
+	"keywords": [
+		"arguments",
+		"args",
+		"parser",
+		"discord.js"
+	],
+	"license": "GNU",
+	"main": "index.js",
+	"name": "argument-parser",
+	"scripts": {
+	},
+	"version": "0.1.0"
+}
