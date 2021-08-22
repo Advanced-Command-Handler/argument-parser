@@ -1,6 +1,9 @@
 {
 	"author": "Ayfri",
 	"description": "The argument parser used in the Advanced-Command-Handler.",
+	"devDependencies": {
+		"typescript": "^4.3.5"
+	},
 	"keywords": [
 		"arguments",
 		"args",
@@ -11,6 +14,8 @@
 	"main": "index.js",
 	"name": "argument-parser",
 	"scripts": {
+		"build": "tsc",
+		"prepublishOnly": "npm run build"
 	},
 	"version": "0.1.0"
 }
