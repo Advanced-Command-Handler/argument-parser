@@ -1,0 +1,8 @@
+# JetBrains IDE
+.idea
+
+# Compilation
+src
+
+# Tests
+*tests*
