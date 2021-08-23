@@ -29,5 +29,5 @@
 		"prettier": "prettier --write src *.json README.md"
 	},
 	"types": "dist",
-	"version": "0.1.0"
+	"version": "0.1.1"
 }

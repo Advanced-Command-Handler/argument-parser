@@ -101,8 +101,7 @@ export class Parser {
 		if (buffer.length > 0) {
 			if (isFlag) {
 				if (isFlagValue) tokens.push(new NamedArgumentToken(flagName, buffer));
-			}
-			else if (isKeyword) tokens.push(new NamedArgumentToken(keywordName, buffer));
+			} else if (isKeyword) tokens.push(new NamedArgumentToken(keywordName, buffer));
 			else outputBuffer += buffer;
 		}
 
