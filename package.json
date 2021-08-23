@@ -1,6 +1,6 @@
 {
 	"author": "Ayfri",
-	"description": "The argument parser used in the Advanced-Command-Handler.",
+	"description": "A simple argument parser.",
 	"devDependencies": {
 		"prettier": "^2.3.2",
 		"typescript": "^4.3.5"
@@ -22,7 +22,7 @@
 		"trailingComma": "es5",
 		"useTabs": true
 	},
-	"name": "argument-parser",
+	"name": "argumentorum",
 	"scripts": {
 		"build": "tsc",
 		"prepublishOnly": "npm run prettier && npm run build",

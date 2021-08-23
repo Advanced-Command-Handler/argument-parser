@@ -1,3 +1,3 @@
-# parser
+# Argumentorum
 
-The argument parser used in the Advanced-Command-Handler.
+A simple argument parser.
