@@ -98,10 +98,13 @@ export class Parser {
 			buffer += char;
 		}
 
-		if (buffer.length > 0 && isFlag)
-			if (isFlagValue) tokens.push(new NamedArgumentToken(flagName, buffer));
+		if (buffer.length > 0) {
+			if (isFlag) {
+				if (isFlagValue) tokens.push(new NamedArgumentToken(flagName, buffer));
+			}
 			else if (isKeyword) tokens.push(new NamedArgumentToken(keywordName, buffer));
 			else outputBuffer += buffer;
+		}
 
 		this.cursor = new Cursor(outputBuffer.trim());
 
